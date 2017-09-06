@@ -1,1 +1,3 @@
 # ministrap
+
+Skeleton based boilerplate
