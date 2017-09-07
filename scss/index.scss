@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-$main-color: #9b59b6;
-$dark-main: #8e44ad;
-$gray: #EEE;
+$primary-color: #9b59b6;
+$dark-primary: #8e44ad;
+$danger-color: #e74c3c;
+$alert-color: #f39c12;
+$success-color: #2ecc71;
+$info-color: #3498db;
+$light-gray: #fefefe;
+$gray: #ddd;
 $dark-gray: #ccc;
-$white: #fff;
-$black: #111;
+$white: #fefefe;
+$black: #222;
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -21,6 +26,7 @@ $black: #111;
   width: 100%;
   float: left;
   box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 /* For devices larger than 400px */
@@ -105,13 +111,14 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%;
+  background-color: $light-gray;
 }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
+  color: $black;
 }
 section{
   padding: 2rem 0;
@@ -149,9 +156,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: $main-color;
+  color: $primary-color;
   &:hover {
-  color: $main-color;
+  color: $primary-color;
   }
 }
 
@@ -167,7 +174,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: $dark-gray;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -178,7 +185,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid $gray;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -193,8 +200,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: $black;
+  border-color: $dark-gray;
   outline: 0;
 }
 
@@ -203,9 +210,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: $main-color;
-  border-color: $main-color;
+  color: $white;
+  background-color: $primary-color;
+  border-color: $primary-color;
 }
 
 .button.button-primary:hover,
@@ -218,9 +225,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: $dark-main;
-  border-color: $dark-main;
+  color: $white;
+  background-color: $dark-primary;
+  border-color: $dark-primary;
 }
 
 
@@ -237,8 +244,8 @@ textarea,
 select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
+  background-color: $white;
+  border: 1px solid $gray;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
@@ -272,7 +279,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid $main-color;
+  border: 1px solid $primary-color;
   outline: 0; }
 label,
 legend {
@@ -333,7 +340,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid $light-gray; }
 th:first-child,
 td:first-child {
   padding-left: 0; }
@@ -412,14 +419,89 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid $light-gray;
+  &.dots{
+    border-top:none;
+    width: 100%;
+    &:before {      
+      --x-height-multiplier: 0.363;
+      --baseline-multiplier: 0.157;
+      font-family: medium-content-slab-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 28px;
+      letter-spacing: .6em;
+      content: '...';
+      display: inline-block;
+      margin-left: .6em;
+      color: rgba(0,0,0,.6);
+      position: relative;
+      top: -30px;}
+  }
+}
+
 .bg-faded{
-    background-color: $gray;}
+  background-color: $gray;}
+.bg-danger{
+  background-color: $danger-color;
+  color: $white;}
+.bg-alert{
+  background-color: $alert-color;
+  color: $white;}
+.bg-success{
+  background-color: $success-color;
+  color: $white;}
+.bg-info{
+  background-color: $info-color;
+  color: $white;}  
+.bg-inverse{
+  background-color: $black;
+  color: $white;}
+.faded{
+  color: $gray;}
+.danger{
+  color: $danger-color;}
+.alert{
+  color: $alert-color;}
+.success{
+  color: $success-color;}
+.info{
+  color: $info-color;} 
+.inverse{
+  color: $white;}
 .jumbotron{
   text-align: center;
-  padding: 20% 2%}
+  padding: 10% 5%}
 .img-responsive{
   max-width: 100%;}
+
+.card{
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  background: $white;
+  border: 1px solid $dark-gray;
+  border-radius: 4px; }
+
+.list-group{
+  list-style-type: disc;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: $white;
+  border: 1px solid $gray;
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  &:first-child {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+}
 
 
 

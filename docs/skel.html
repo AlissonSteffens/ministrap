@@ -2,63 +2,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Skeleton: Responsive CSS Boilerplate</title>
+  <title>Ministrap</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../dist/normalize.css">
-    <link rel="stylesheet" href="../dist/ministrap.css">
-  
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-
+  <link rel="stylesheet" href="../dist/ministrap.css">
 </head>
+<style>
+  #header{
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.7), 
+      rgba(255, 255, 255, 0.7)
+    ), url('../dist/img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+</style>
 <body class="">
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <section class="header jumbotron">
-      <h2 class="title">A dead simple, responsive boilerplate.</h2>
+  
+ 
+    <section class="jumbotron" id="header">
+      <h1><img src="../dist/feather/layers.svg" height="40rem"> Ministrap</h1>
+      <h2 class="title">Yet Another CSS Boilerplate</h2>
       <a class="button button-primary" href="https://github.com/dhg/Skeleton/releases/download/2.0.4/Skeleton-2.0.4.zip" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">Download</a>
-      <div class="row my-4">
-        <div class="four columns">
-          <img class="img-responsive" src="http://getskeleton.com/images/feather.svg">
-          <p>Light as a feather at ~400 lines &amp; built with mobile in mind.</p>
-        </div>
-        <div class="four columns">
-          <img class="img-responsive" src="http://getskeleton.com/images/pens.svg">
-          <p>Styles designed to be a starting point, not a UI framework.</p>
-        </div>
-        <div class="four columns">
-          <img class="img-responsive" src="http://getskeleton.com/images/watch.svg">
-          <p>Quick to start with zero compiling or installing necessary.</p>
-        </div>
-      </div>
     </section>
-
+ <div class="container"> 
     <!-- Why use Skeleton -->
     <section class="" id="intro">
-      <h4 class="docs-header">Is Skeleton for you?</h4>
-      <p>You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on Skeleton and has ~200 lines of custom CSS</u> (half of which is the docking navigation).</p>
-      <p>Love Skeleton and want to Tweet it, share it, or star it? Well, I appreciate that <3</p>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      <!-- <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.getskeleton.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=151131931646052" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width:140px" allowTransparency="true"></iframe> -->
-      <iframe src="http://ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-      <iframe src="http://ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <h4 class="docs-header">What is Ministrap?</h4>
+      <p>Minitrap is a project for you who don't need the entire Bootstrap for your project, but need something bigger than Skeleton</p>
+      
     </section>
 
     <!-- Grid -->
@@ -114,7 +93,7 @@
     </section>
 
     <!-- Typography -->
-    <div class="" id="typography">
+    <section class="" id="typography">
       <h4 class="docs-header">Typography</h4>
       <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
       <div class="docs-example">
@@ -133,11 +112,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Buttons -->
-    <div class="" id="buttons">
-      <h5 class="docs-header">Buttons</h5>
+    <section class="" id="buttons">
+      <h4 class="docs-header">Buttons</h4>
       <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
       <div class="docs-example">
         <div>
@@ -154,11 +133,11 @@
         </div>
       </div>
 
-    </div>
+    </section>
 
     <!-- Forms -->
-    <div class="" id="forms">
-      <h5 class="docs-header">Forms</h5>
+    <section class="" id="forms">
+      <h4 class="docs-header">Forms</h4>
       <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
       <div class="docs-example docs-example-forms">
         <form>
@@ -186,11 +165,11 @@
         </form>
       </div>
 
-    </div>
+    </section>
 
     <!-- Lists -->
-    <div class="" id="lists">
-      <h5 class="docs-header">Lists</h5>
+    <section class="" id="lists">
+      <h4 class="docs-header">Lists</h4>
       <div class="row docs-example">
         <div class="six columns">
           <ul>
@@ -219,11 +198,11 @@
           </ol>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Code -->
-    <div class="" id="code">
-      <h5 class="docs-header">Code</h5>
+    <section class="" id="code">
+      <h4 class="docs-header">Code</h4>
       <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
       <div class="docs-example">
 <pre><code>.some-class {
@@ -231,11 +210,11 @@
 }</code></pre>
       </div>
 
-    </div>
+    </section>
 
     <!-- Tables -->
-    <div class="" id="tables">
-      <h5 class="docs-header">Tables</h5>
+    <section class="" id="tables">
+      <h4 class="docs-header">Tables</h4>
       <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
       <div class="docs-example">
         <table class="full-width">
@@ -263,11 +242,11 @@
           </tbody>
         </table>
       </div>
-    </div>
+    </section>
 
     <!-- Queries -->
-    <div class="" id="queries">
-      <h5 class="docs-header">Media queries</h5>
+    <section class="" id="queries">
+      <h4 class="docs-header">Media queries</h4>
       <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
       <div class="docs-example row">
         <div class="six columns">
@@ -284,14 +263,55 @@
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- Utilities and Misc. -->
-    <div class="" id="utilities">
-      <h5 class="docs-header">Utilities</h5>
+    <section class="mb-4" id="utilities">
+      <h4 class="docs-header">Utilities</h4>
       <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
-    </div>
+      <h5>Background Color </h5>
+      <div class="row">
+        <div class="four columns bg-faded">Bg Faded</div>
+        <div class="four columns bg-danger">Bg Danger</div>
+        <div class="four columns bg-inverse">Bg Inverse</div>
+      </div>
+      <div class="row">
+        <div class="four columns bg-alert">Bg Alert</div>
+        <div class="four columns bg-success">Bg Success</div>
+        <div class="four columns bg-info">Bg Info</div>
+      </div>
+      <h5>Color </h5>
+      <div class="row">
+        <div class="four columns faded">Faded</div>
+        <div class="four columns danger">Danger</div>
+        <div class="four columns inverse bg-faded">Inverse</div>
+      </div>
+      <div class="row">
+        <div class="four columns alert">Alert</div>
+        <div class="four columns success">Success</div>
+        <div class="four columns info">Info</div>
+      </div>
+      <h5>Cards </h5>
+      <div class="row">
+        <div class="offset-by-two six columns card">card</div>
+      </div>
+      <h5>List Groups </h5>
+      <div class="row">
+        <ul class="offset-by-two six columns list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+      
+      <h5>Hrs </h5>
+      <hr>
+      <hr class="dots">
+
+    </section>
 
   </div>
 
