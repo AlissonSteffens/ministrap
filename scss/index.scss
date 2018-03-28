@@ -6,10 +6,10 @@ $danger-color: #e74c3c;
 $alert-color: #f39c12;
 $success-color: #2ecc71;
 $info-color: #3498db;
-$light-gray: #fefefe;
+$light-gray: #ccc;
 $gray: #ddd;
-$dark-gray: #ccc;
-$white: #fefefe;
+$dark-gray: #aaa;
+$white: #FAFAFA;
 $black: #222;
 
 /* Grid
@@ -43,8 +43,11 @@ $black: #222;
   .column,
   .columns {
     margin-left: 4%;
+    border-radius: 4px;
     &:first-child {
-    margin-left: 0; }}
+      margin-left: 0; 
+    }
+  }
   
   .row{
     margin-bottom: 1rem;
@@ -111,7 +114,7 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%;
-  background-color: $light-gray;
+  background-color: $white;
 }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
@@ -439,7 +442,8 @@ hr {
       top: -30px;}
   }
 }
-
+.bg-primary{
+  background-color: $primary-color;}
 .bg-faded{
   background-color: $gray;}
 .bg-danger{
@@ -457,6 +461,8 @@ hr {
 .bg-inverse{
   background-color: $black;
   color: $white;}
+.primary{
+  color: $primary-color;}
 .faded{
   color: $gray;}
 .danger{

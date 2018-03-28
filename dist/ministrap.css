@@ -617,6 +617,10 @@ hr.dots:before {
   top: -30px;
 }
 
+.bg-primary {
+  background-color: #F80759;
+}
+
 .bg-faded {
   background-color: #ddd;
 }
@@ -644,6 +648,10 @@ hr.dots:before {
 .bg-inverse {
   background-color: #222;
   color: #fefefe;
+}
+
+.primary {
+  color: #F80759;
 }
 
 .faded {

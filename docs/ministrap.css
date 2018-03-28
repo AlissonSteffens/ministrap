@@ -34,6 +34,7 @@
   .column,
 .columns {
     margin-left: 4%;
+    border-radius: 4px;
   }
   .column:first-child,
 .columns:first-child {
@@ -184,7 +185,7 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%;
-  background-color: #fefefe;
+  background-color: #FAFAFA;
 }
 
 body {
@@ -293,7 +294,7 @@ input[type=button] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #ccc;
+  color: #aaa;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -320,7 +321,7 @@ input[type=submit]:focus,
 input[type=reset]:focus,
 input[type=button]:focus {
   color: #222;
-  border-color: #ccc;
+  border-color: #aaa;
   outline: 0;
 }
 
@@ -329,7 +330,7 @@ button.button-primary,
 input[type=submit].button-primary,
 input[type=reset].button-primary,
 input[type=button].button-primary {
-  color: #fefefe;
+  color: #FAFAFA;
   background-color: #F80759;
   border-color: #F80759;
 }
@@ -344,7 +345,7 @@ button.button-primary:focus,
 input[type=submit].button-primary:focus,
 input[type=reset].button-primary:focus,
 input[type=button].button-primary:focus {
-  color: #fefefe;
+  color: #FAFAFA;
   background-color: #c70948;
   border-color: #c70948;
 }
@@ -363,7 +364,7 @@ select {
   height: 38px;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fefefe;
+  background-color: #FAFAFA;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: none;
@@ -460,8 +461,8 @@ code, .code {
   margin: 0 0.2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #fefefe;
-  border: 1px solid #ccc;
+  background: #FAFAFA;
+  border: 1px solid #aaa;
   border-radius: 4px;
 }
 
@@ -478,7 +479,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #fefefe;
+  border-bottom: 1px solid #ccc;
 }
 
 th:first-child,
@@ -595,7 +596,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #fefefe;
+  border-top: 1px solid #ccc;
 }
 hr.dots {
   border-top: none;
@@ -617,33 +618,41 @@ hr.dots:before {
   top: -30px;
 }
 
+.bg-primary {
+  background-color: #F80759;
+}
+
 .bg-faded {
   background-color: #ddd;
 }
 
 .bg-danger {
   background-color: #e74c3c;
-  color: #fefefe;
+  color: #FAFAFA;
 }
 
 .bg-alert {
   background-color: #f39c12;
-  color: #fefefe;
+  color: #FAFAFA;
 }
 
 .bg-success {
   background-color: #2ecc71;
-  color: #fefefe;
+  color: #FAFAFA;
 }
 
 .bg-info {
   background-color: #3498db;
-  color: #fefefe;
+  color: #FAFAFA;
 }
 
 .bg-inverse {
   background-color: #222;
-  color: #fefefe;
+  color: #FAFAFA;
+}
+
+.primary {
+  color: #F80759;
 }
 
 .faded {
@@ -667,7 +676,7 @@ hr.dots:before {
 }
 
 .inverse {
-  color: #fefefe;
+  color: #FAFAFA;
 }
 
 .jumbotron {
@@ -682,8 +691,8 @@ hr.dots:before {
 .card {
   padding: 0.2rem 0.5rem;
   margin: 0 0.2rem;
-  background: #fefefe;
-  border: 1px solid #ccc;
+  background: #FAFAFA;
+  border: 1px solid #aaa;
   border-radius: 4px;
 }
 
@@ -696,7 +705,7 @@ hr.dots:before {
   display: block;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
-  background-color: #fefefe;
+  background-color: #FAFAFA;
   border: 1px solid #ddd;
 }
 .list-group-item:last-child {
