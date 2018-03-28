@@ -24,7 +24,9 @@
     color: #999;
     letter-spacing: normal;
   }
-  
+  .head-icon{
+    height: 2.5rem;
+  }
 </style>
 <body class="">
 
@@ -45,7 +47,7 @@
 
     <!-- Grid -->
     <section class="" id="grid">
-      <h4 class="docs-header">The grid</h4>
+      <h4 class="docs-header"><img src="feather/grid.svg"  class="head-icon"> The grid</h4>
       <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
       <div class="">
         <div class="row">
@@ -97,7 +99,7 @@
 
     <!-- Typography -->
     <section class="" id="typography">
-      <h4 class="docs-header">Typography</h4>
+      <h4 class="docs-header"><img src="feather/type.svg"  class="head-icon">  Typography</h4>
       <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
       <div class="docs-example">
         <div class="row">
@@ -119,7 +121,7 @@
 
     <!-- Buttons -->
     <section class="" id="buttons">
-      <h4 class="docs-header">Buttons</h4>
+      <h4 class="docs-header"><img src="feather/link.svg"  class="head-icon"> Buttons</h4>
       <p>Wanna Buttons? Ministrap has 2 os then. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
       <div class="docs-example">
         <div>
@@ -140,7 +142,7 @@
 
     <!-- Forms -->
     <section class="" id="forms">
-      <h4 class="docs-header">Forms</h4>
+      <h4 class="docs-header"><img src="feather/message-circle.svg"  class="head-icon"> Forms</h4>
       <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
       <div class="docs-example docs-example-forms">
         <form>
@@ -161,17 +163,19 @@
           <label for="exampleMessage">Message</label>
           <textarea class="full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
           
-          <div>
-            <input id="styled-checkbox-1" type="checkbox" value="value1">
-            <label for="styled-checkbox-1">Checkbox</label>
-          </div>
-          <div>
-            <input id="styled-checkbox-2" type="checkbox" value="value1">
-            <label for="styled-checkbox-2">Checkbox 2</label>
-          </div>
-          <div>
-            <input id="styled-checkbox-3" type="checkbox" value="value1">
-            <label for="styled-checkbox-3">Checkbox 3</label>
+            <div class="row">
+            <div class="four columns">
+              <input id="styled-checkbox-1" type="checkbox" value="value1">
+              <label for="styled-checkbox-1">Checkbox</label>
+            </div>
+            <div class="four columns">
+              <input id="styled-checkbox-2" type="checkbox" value="value1">
+              <label for="styled-checkbox-2">Checkbox 2</label>
+            </div>
+            <div class="four columns">
+              <input id="styled-checkbox-3" type="checkbox" value="value1">
+              <label for="styled-checkbox-3">Checkbox 3</label>
+            </div>
           </div>
           <input class="button-primary" type="submit" value="Submit">
         </form>
@@ -181,7 +185,7 @@
 
     <!-- Lists -->
     <section class="" id="lists">
-      <h4 class="docs-header">Lists</h4>
+      <h4 class="docs-header"><img src="feather/list.svg" class="head-icon"> Lists</h4>
       <div class="row docs-example">
         <div class="six columns">
           <ul>
@@ -214,7 +218,7 @@
 
     <!-- Code -->
     <section class="" id="code">
-      <h4 class="docs-header">Code</h4>
+      <h4 class="docs-header"><img src="feather/code.svg"  class="head-icon"> Code</h4>
       <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
       <div class="docs-example">
 <pre><code>.some-class {
@@ -226,7 +230,7 @@
 
     <!-- Tables -->
     <section class="" id="tables">
-      <h4 class="docs-header">Tables</h4>
+      <h4 class="docs-header"><img src="feather/database.svg"  class="head-icon"> Tables</h4>
       <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
       <div class="docs-example">
         <table class="full-width">
@@ -258,7 +262,7 @@
 
     <!-- Utilities and Misc. -->
     <section class="mb-4" id="utilities">
-      <h4 class="docs-header">Utilities</h4>
+      <h4 class="docs-header"><img src="feather/aperture.svg"  class="head-icon"> Utilities</h4>
       <p>Ministrap has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
       <h5>Background Color </h5>
       <div class="row">

@@ -539,9 +539,12 @@ hr {
   color: $info-color;} 
 .inverse{
   color: $white;}
+
+
 .jumbotron{
   text-align: center;
   padding: 10% 5%}
+
 .img-responsive{
   max-width: 100%;}
 
@@ -549,7 +552,7 @@ hr {
   padding: .2rem .5rem;
   margin: 0 .2rem;
   background: $white;
-  border: 1px solid $dark-gray;
+  border: 1px solid $gray;
   border-radius: 4px; }
 
 .list-group{
