@@ -233,7 +233,6 @@ input[type="button"].button-primary:focus {
   border-color: $dark-primary;
 }
 
-
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
@@ -287,8 +286,7 @@ select:focus {
 label,
 legend {
   display: block;
-  margin-bottom: .5rem;
-  font-weight: 600; }
+  margin-bottom: .5rem; }
 fieldset {
   padding: 0;
   border-width: 0; }
@@ -300,7 +298,73 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal; }
 
+input[type="checkbox"] {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
 
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: $gray;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: $primary-color;
+  }
+  
+  // Box focus
+  &:focus + label:before {
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: $primary-color;
+  }
+  
+  // Disabled state label.
+  &:disabled + label {
+    color: $light-gray;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: $danger-color;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: $white;
+    width: 4px;
+    height: 4px;
+    box-shadow: 
+      2px 0 0 $white,
+      4px 0 0 $white,
+      4px 0px 0 $white,
+      4px -2px 0 $white,
+      4px -4px 0 $white,
+      4px -6px 0 $white;
+    transform: rotate(45deg);
+  }
+}
+  
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
