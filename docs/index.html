@@ -27,28 +27,46 @@
   .head-icon{
     height: 2.5rem;
   }
+  section{
+    padding-top: 75px;
+  }
 </style>
 <body class="">
 
   
  
-    <section class="jumbotron" id="header">
-      <h1 class=""><img src="logo.svg" class="" height="40rem">inistrap</h1>
-      <h2 class="title ">Yet Another CSS Boilerplate</h2>
-      <a class="button button-primary" href="" >Download</a>
-    </section>
+  <section class="jumbotron" id="header">
+    <h1 class=""><img src="logo.svg" class="" height="40rem">inistrap</h1>
+    <h2 class="title ">Yet Another CSS Boilerplate</h2>
+    <a class="button button-primary" href="" >Download</a>
+  </section>
+  <!-- Narbar -->
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#intro">Code</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#examples">Examples</a></li>
+      </ul>
+    </div>
+  </nav>
  <div class="container"> 
-    <!-- Why use Skeleton -->
+    <!-- Why use it -->
     <section class="" id="intro">
-      <h4 class="docs-header">What is Ministrap?</h4>
-      <p>Minitrap is a project for you who don't need the entire Bootstrap for your project, but need something bigger than Skeleton</p>
+      <h4 class="docs-header"><img src="feather/layers.svg"  class="head-icon"> What is Ministrap?</h4>
+      <p>Minitrap is a project for you who don't need the entire Bootstrap for your project, but need something bigger than Skeleton (<strong>we are Skeleton compatible</strong>)</p>
       
     </section>
-
+    <!-- Navs? -->
+    <section class="" id="nav">
+        <h4 class="docs-header"><img src="feather/menu.svg"  class="head-icon"> Navbar</h4>
+        <p>We have a nice Navbar (<i>as you see</i>) and it can be either on page or <code>fixed</code> on top</p>
+        
+      </section>
     <!-- Grid -->
     <section class="" id="grid">
       <h4 class="docs-header"><img src="feather/grid.svg"  class="head-icon"> The grid</h4>
-      <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+      <p>Yeah, you know many 12 columns layouts, and we have a god one of these. Stop crying about non responsive shit, use our grid system.</p>
       <div class="">
         <div class="row">
           <div class="one column bg-faded">One</div>
@@ -100,12 +118,11 @@
     <!-- Typography -->
     <section class="" id="typography">
       <h4 class="docs-header"><img src="feather/type.svg"  class="head-icon">  Typography</h4>
-      <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
+      <p>Typography matters, so we have some cool thigs for you.</p>
       <div class="docs-example">
         <div class="row">
           <div class="four columns">
-            <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
-            <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
+            <p>We use <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> for make it great. Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
           </div>
           <div class="eight columns">
             <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
@@ -314,5 +331,24 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    var navOffsetTop
+    $(document).ready(function(){
+      navOffsetTop = $('nav').offset().top
+      $(window).on('scroll', onScroll)
+    })
+    function onScroll() {
+      
+      if(navOffsetTop < $(window).scrollTop() && !$('nav').hasClass('fixed')) {
+        $('nav').addClass('fixed')
+        $('body').css("padding-top", $('nav').height())
+      }
+      if(navOffsetTop > $(window).scrollTop() && $('nav').hasClass('fixed')) {
+        $('nav').removeClass('fixed')
+        $('body').css("padding-top", 0)
+      }
+    }
+  </script>
 </body>
 </html>

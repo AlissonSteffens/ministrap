@@ -633,6 +633,66 @@ form {
   margin-bottom: 4rem;
 }
 
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar,
+.navbar-spacer {
+  display: block;
+  width: 100%;
+  height: 6.5rem;
+  background: #FAFAFA;
+  z-index: 99;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.navbar.fixed,
+.navbar-spacer.fixed {
+  position: fixed;
+  top: 0;
+}
+.navbar .container,
+.navbar-spacer .container {
+  width: 100%;
+}
+.navbar + .docs-section,
+.navbar-spacer + .docs-section {
+  border-top-width: 0;
+}
+.navbar .navbar-item,
+.navbar-spacer .navbar-item {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
+}
+.navbar .navbar-list,
+.navbar-spacer .navbar-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+.navbar .navbar-link,
+.navbar-spacer .navbar-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin-right: 35px;
+  text-decoration: none;
+  line-height: 6.5rem;
+  color: #222;
+}
+.navbar .navbar-link .active,
+.navbar-spacer .navbar-link .active {
+  color: #33C3F0;
+}
+.navbar .navbar-link:hover,
+.navbar-spacer .navbar-link:hover {
+  color: #F80759;
+}
+
+.navbar-spacer {
+  display: none;
+}
+
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
@@ -727,7 +787,7 @@ hr.dots:before {
   padding: 10% 5%;
 }
 
-.img-responsive {
+.img-responsive, .u-max-full-width {
   max-width: 100%;
 }
 
