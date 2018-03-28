@@ -1,15 +1,322 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../dist/normalize.css">
-    <link rel="stylesheet" href="../dist/ministrap.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Hello, world!</h1>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Ministrap</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../dist/normalize.css">
+  <link rel="stylesheet" href="../dist/ministrap.css">
+</head>
+<style>
+  #header{
+    background: url('https://images.unsplash.com/photo-1413882095748-709edc6c9655?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7016b06acb450360a13ef2b80ede53b1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+
+  }
+  
+</style>
+<body class="">
+
+  
+ 
+    <section class="jumbotron" id="header">
+      <h1 class="inverse"><img src="../dist/feather/layers.svg" class="inverse" height="40rem"> Ministrap</h1>
+      <h2 class="title inverse">Yet Another CSS Boilerplate</h2>
+      <a class="button button-primary" href="" >Download</a>
+    </section>
+ <div class="container"> 
+    <!-- Why use Skeleton -->
+    <section class="" id="intro">
+      <h4 class="docs-header">What is Ministrap?</h4>
+      <p>Minitrap is a project for you who don't need the entire Bootstrap for your project, but need something bigger than Skeleton</p>
+      
+    </section>
+
+    <!-- Grid -->
+    <section class="" id="grid">
+      <h4 class="docs-header">The grid</h4>
+      <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+      <div class="">
+        <div class="row">
+          <div class="one column bg-faded">One</div>
+          <div class="eleven columns bg-faded">Eleven</div>
+        </div>
+        <div class="row">
+          <div class="two columns bg-faded">Two</div>
+          <div class="ten columns bg-faded">Ten</div>
+        </div>
+        <div class="row">
+          <div class="three columns bg-faded">Three</div>
+          <div class="nine columns bg-faded">Nine</div>
+        </div>
+        <div class="row">
+          <div class="four columns bg-faded">Four</div>
+          <div class="eight columns bg-faded">Eight</div>
+        </div>
+        <div class="row">
+          <div class="five columns bg-faded">Five</div>
+          <div class="seven columns bg-faded">Seven</div>
+        </div>
+        <div class="row">
+          <div class="six columns bg-faded">Six</div>
+          <div class="six columns bg-faded">Six</div>
+        </div>
+        <div class="row">
+          <div class="seven columns bg-faded">Seven</div>
+          <div class="five columns bg-faded">Five</div>
+        </div>
+        <div class="row">
+          <div class="eight columns bg-faded">Eight</div>
+          <div class="four  columns bg-faded">Four</div>
+        </div>
+        <div class="row">
+          <div class="nine columns bg-faded">Nine</div>
+          <div class="three columns bg-faded">Three</div>
+        </div>
+        <div class="row">
+          <div class="ten columns bg-faded">Ten</div>
+          <div class="two columns bg-faded">Two</div>
+        </div>
+        <div class="row">
+          <div class="eleven columns bg-faded">Eleven</div>
+          <div class="one column bg-faded">One</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="" id="typography">
+      <h4 class="docs-header">Typography</h4>
+      <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
+      <div class="docs-example">
+        <div class="row">
+          <div class="six columns">
+            <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+            <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
+          </div>
+          <div class="six columns">
+            <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
+            <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
+            <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
+            <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
+            <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+            <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="" id="buttons">
+      <h4 class="docs-header">Buttons</h4>
+      <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
+      <div class="docs-example">
+        <div>
+          <a class="button" href="#">Anchor button</a>
+          <button>Button element</button>
+          <input type="submit" value="submit input">
+          <input type="button" value="button input">
+        </div>
+        <div>
+          <a class="button button-primary" href="#">Anchor button</a>
+          <button class="button-primary">Button element</button>
+          <input class="button-primary" type="submit" value="submit input">
+          <input class="button-primary" type="button" value="button input">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Forms -->
+    <section class="" id="forms">
+      <h4 class="docs-header">Forms</h4>
+      <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
+      <div class="docs-example docs-example-forms">
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            </div>
+            <div class="six columns">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="full-width" id="exampleRecipientInput">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
+            </div>
+          </div>
+          <label for="exampleMessage">Message</label>
+          <textarea class="full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="button-primary" type="submit" value="Submit">
+        </form>
+      </div>
+
+    </section>
+
+    <!-- Lists -->
+    <section class="" id="lists">
+      <h4 class="docs-header">Lists</h4>
+      <div class="row docs-example">
+        <div class="six columns">
+          <ul>
+            <li>Unordered lists have basic styles</li>
+            <li>
+              They use the circle list style
+              <ul>
+                <li>Nested lists styled to feel right</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Just more list items mama san</li>
+          </ul>
+        </div>
+        <div class="six columns">
+          <ol>
+            <li>Ordered lists also have basic styles</li>
+            <li>
+              They use the decimal list style
+              <ul>
+                <li>Ordered and unordered can be nested</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Last list item just for the fun</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code -->
+    <section class="" id="code">
+      <h4 class="docs-header">Code</h4>
+      <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
+      <div class="docs-example">
+<pre><code>.some-class {
+  background-color: red;
+}</code></pre>
+      </div>
+
+    </section>
+
+    <!-- Tables -->
+    <section class="" id="tables">
+      <h4 class="docs-header">Tables</h4>
+      <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
+      <div class="docs-example">
+        <table class="full-width">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Sex</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave Gamache</td>
+              <td>26</td>
+              <td>Male</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr>
+              <td>Dwayne Johnson</td>
+              <td>42</td>
+              <td>Male</td>
+              <td>Hayward</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Queries -->
+    <section class="" id="queries">
+      <h4 class="docs-header">Media queries</h4>
+      <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
+      <div class="docs-example row">
+        <div class="six columns">
+          <ul>
+            <li><strong>Desktop HD</strong>: 1200px</li>
+            <li><strong>Desktop</strong>: 1000px</li>
+            <li><strong>Tablet</strong>: 750px</li>
+          </ul>
+        </div>
+        <div class="six columns">
+          <ul>
+            <li><strong>Phablet</strong>: 550px</li>
+            <li><strong>Mobile</strong>: 400px</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Utilities and Misc. -->
+    <section class="mb-4" id="utilities">
+      <h4 class="docs-header">Utilities</h4>
+      <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
+      <h5>Background Color </h5>
+      <div class="row">
+        <div class="four columns bg-faded">Bg Faded</div>
+        <div class="four columns bg-danger">Bg Danger</div>
+        <div class="four columns bg-inverse">Bg Inverse</div>
+      </div>
+      <div class="row">
+        <div class="four columns bg-alert">Bg Alert</div>
+        <div class="four columns bg-success">Bg Success</div>
+        <div class="four columns bg-info">Bg Info</div>
+      </div>
+      <h5>Color </h5>
+      <div class="row">
+        <div class="four columns faded">Faded</div>
+        <div class="four columns danger">Danger</div>
+        <div class="four columns inverse bg-faded">Inverse</div>
+      </div>
+      <div class="row">
+        <div class="four columns alert">Alert</div>
+        <div class="four columns success">Success</div>
+        <div class="four columns info">Info</div>
+      </div>
+      <h5>Cards </h5>
+      <div class="row">
+        <div class="offset-by-two six columns card">card</div>
+      </div>
+      <h5>List Groups </h5>
+      <div class="row">
+        <ul class="offset-by-two six columns list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+      
+      <h5>Hrs </h5>
+      <hr>
+      <hr class="dots">
+
+    </section>
+
+  </div>
+
+
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
