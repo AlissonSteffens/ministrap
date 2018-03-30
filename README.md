@@ -1,5 +1,3 @@
-<img src="" width="123px" alt="Ministrap" align="right">
-
 <p align="center">
   <a href="https://alissonsteffens.github.io/ministrap/">
     <img src="https://alissonsteffens.github.io/ministrap/logo.svg" alt="" width=72 height=72>
