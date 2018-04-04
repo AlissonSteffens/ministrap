@@ -1,4 +1,4 @@
-<p align="center">
+    <p align="center">
   <a href="https://alissonsteffens.github.io/ministrap/">
     <img src="https://alissonsteffens.github.io/ministrap/logo.svg" alt="" width=72 height=72>
   </a>
