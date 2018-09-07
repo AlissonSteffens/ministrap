@@ -22,7 +22,7 @@ Minitrap is a project for you who don't need the entire Bootstrap for your proje
 ## What's included?
 You just want a single file o/.
 
-You can use it by adding <kbd>`<link rel="stylesheet" href="https://alissonsteffens.github.io/ministrap.css">
+You can use it by adding <kbd>`<link rel="stylesheet" href="https://alissonsteffens.github.io/ministrap/ministrap.css">
 `</kbd> to your code.
 
 ## What does it do?
