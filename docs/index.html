@@ -30,6 +30,9 @@
   section{
     padding-top: 75px;
   }
+  #menu-logo{
+    margin-top: 0.9rem;
+  }
 </style>
 <body class="">
 
@@ -44,6 +47,7 @@
   <nav class="navbar">
     <div class="container">
       <ul class="navbar-list">
+        <li class="navbar-item show-on-fixed" id='menu-logo'><a class="navbar-link" href="#"><img src="logo.svg" class="" height="25rem"></a></li>
         <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#nav">Navbar</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#grid">Grid</a></li>
@@ -339,15 +343,19 @@
     $(document).ready(function(){
       navOffsetTop = $('nav').offset().top
       $(window).on('scroll', onScroll)
+      $('.show-on-fixed').hide()
     })
     function onScroll() {
       
       if(navOffsetTop < $(window).scrollTop() && !$('nav').hasClass('fixed')) {
         $('nav').addClass('fixed')
+        $('.show-on-fixed').show()
         $('body').css("padding-top", $('nav').height())
+
       }
       if(navOffsetTop > $(window).scrollTop() && $('nav').hasClass('fixed')) {
         $('nav').removeClass('fixed')
+        $('.show-on-fixed').hide()
         $('body').css("padding-top", 0)
       }
     }
