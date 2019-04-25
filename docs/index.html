@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Ministrap</title>
@@ -13,65 +13,72 @@
   <link rel="stylesheet" href="ministrap.css">
 </head>
 <style>
-  #header{
-    
+  #header {
+
     background-color: #fafafa;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23cccccc' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23aaaaaa'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
   }
+
   .heading-font-size {
     font-size: 1.2rem;
     color: #999;
     letter-spacing: normal;
   }
-  .head-icon{
-    height: 2.5rem;
+
+  .head-icon {
+    height: 3.5rem;
   }
-  section{
+
+  section {
     padding-top: 75px;
   }
-  #menu-logo{
+
+  #menu-logo {
     margin-top: 0.9rem;
   }
 </style>
-<body class="">
 
-  
- 
+<body class="">
   <section class="jumbotron" id="header">
     <h1 class=""><img src="logo.svg" class="" height="40rem">inistrap</h1>
     <h2 class="title ">Yet Another CSS Boilerplate</h2>
-    <a class="button button-primary" href="" >Download</a>
+    <a class="button button-primary" href="">Download</a>
   </section>
   <!-- Narbar -->
-  <nav class="navbar">
+  <nav class="navbar show-md">
     <div class="container">
-      <ul class="navbar-list">
+      <ul class="navbar-list ">
         <li class="navbar-item show-on-fixed" id='menu-logo'><a class="navbar-link" href="#"><img src="logo.svg" class="" height="25rem"></a></li>
         <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#nav">Navbar</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#grid">Grid</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#typography">Typography</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#buttons">Buttons</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#forms">Forms</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#lists">Lists</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#code">Code</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#tables">Tables</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#utilities">Utilities</a></li>
       </ul>
     </div>
   </nav>
- <div class="container"> 
+  <div class="container">
     <!-- Why use it -->
     <section class="" id="intro">
-      <h4 class="docs-header"><img src="feather/layers.svg"  class="head-icon"> What is Ministrap?</h4>
+      <h4 class="docs-header"><img src="feather/layers.svg" class="head-icon"> What is Ministrap?</h4>
       <p>Minitrap is a project for you who don't need the entire Bootstrap for your project, but need something bigger than Skeleton (<strong>we are Skeleton compatible</strong>)</p>
-      
+
     </section>
     <!-- Navs? -->
     <section class="" id="nav">
-        <h4 class="docs-header"><img src="feather/menu.svg"  class="head-icon"> Navbar</h4>
-        <p>We have a nice Navbar (<i>as you see</i>) and it can be either on page or <code>fixed</code> on top</p>
-        
-      </section>
+      <h4 class="docs-header"><img src="feather/menu.svg" class="head-icon"> Navbar</h4>
+      <p>We have a nice Navbar (<i>as you see</i>) and it can be either on page or <code>fixed</code> on top</p>
+
+    </section>
     <!-- Grid -->
     <section class="" id="grid">
-      <h4 class="docs-header"><img src="feather/grid.svg"  class="head-icon"> The grid</h4>
+      <h4 class="docs-header"><img src="feather/grid.svg" class="head-icon"> The grid</h4>
       <p>Yeah, you know many 12 columns layouts, and we have a god one of these. Stop crying about non responsive shit, use our grid system.</p>
       <div class="">
         <div class="row">
@@ -123,12 +130,13 @@
 
     <!-- Typography -->
     <section class="" id="typography">
-      <h4 class="docs-header"><img src="feather/type.svg"  class="head-icon">  Typography</h4>
+      <h4 class="docs-header"><img src="feather/type.svg" class="head-icon"> Typography</h4>
       <p>Typography matters, so we have some cool thigs for you.</p>
       <div class="docs-example">
         <div class="row">
           <div class="four columns">
-            <p>We use <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> for make it great. Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+            <p>We use <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> for make it great. Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.
+            </p>
           </div>
           <div class="eight columns">
             <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
@@ -144,8 +152,9 @@
 
     <!-- Buttons -->
     <section class="" id="buttons">
-      <h4 class="docs-header"><img src="feather/link.svg"  class="head-icon"> Buttons</h4>
-      <p>Wanna Buttons? Ministrap has 2 os then. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
+      <h4 class="docs-header"><img src="feather/link.svg" class="head-icon"> Buttons</h4>
+      <p>Wanna Buttons? Ministrap has 2 os then. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements,
+        but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
       <div class="docs-example">
         <div>
           <a class="button" href="#">Anchor button</a>
@@ -165,7 +174,7 @@
 
     <!-- Forms -->
     <section class="" id="forms">
-      <h4 class="docs-header"><img src="feather/message-circle.svg"  class="head-icon"> Forms</h4>
+      <h4 class="docs-header"><img src="feather/message-circle.svg" class="head-icon"> Forms</h4>
       <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
       <div class="docs-example docs-example-forms">
         <form>
@@ -185,8 +194,8 @@
           </div>
           <label for="exampleMessage">Message</label>
           <textarea class="full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
-          
-            <div class="row">
+
+          <div class="row">
             <div class="four columns">
               <input id="styled-checkbox-1" type="checkbox" value="value1">
               <label for="styled-checkbox-1">Checkbox</label>
@@ -241,10 +250,10 @@
 
     <!-- Code -->
     <section class="" id="code">
-      <h4 class="docs-header"><img src="feather/code.svg"  class="head-icon"> Code</h4>
+      <h4 class="docs-header"><img src="feather/code.svg" class="head-icon"> Code</h4>
       <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
       <div class="docs-example">
-<pre><code>.some-class {
+        <pre><code>.some-class {
   background-color: red;
 }</code></pre>
       </div>
@@ -253,7 +262,7 @@
 
     <!-- Tables -->
     <section class="" id="tables">
-      <h4 class="docs-header"><img src="feather/database.svg"  class="head-icon"> Tables</h4>
+      <h4 class="docs-header"><img src="feather/database.svg" class="head-icon"> Tables</h4>
       <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
       <div class="docs-example">
         <table class="full-width">
@@ -285,7 +294,7 @@
 
     <!-- Utilities and Misc. -->
     <section class="mb-4" id="utilities">
-      <h4 class="docs-header"><img src="feather/aperture.svg"  class="head-icon"> Utilities</h4>
+      <h4 class="docs-header"><img src="feather/aperture.svg" class="head-icon"> Utilities</h4>
       <p>Ministrap has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
       <h5>Background Color </h5>
       <div class="row">
@@ -311,7 +320,9 @@
       </div>
       <h5>Cards </h5>
       <div class="row">
-        <div class="offset-by-two six columns card"><h1>Incard Header</h1>card body</div>
+        <div class="offset-by-two six columns card">
+          <h1>Incard Header</h1>card body
+        </div>
       </div>
       <h5>List Groups </h5>
       <div class="row">
@@ -323,7 +334,7 @@
           <li class="list-group-item">Vestibulum at eros</li>
         </ul>
       </div>
-      
+
       <h5>Hrs </h5>
       <hr>
       <hr class="dots">
@@ -333,27 +344,28 @@
   </div>
 
 
-  
 
-<!-- End Document
+
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     var navOffsetTop
-    $(document).ready(function(){
+    $(document).ready(function() {
       navOffsetTop = $('nav').offset().top
       $(window).on('scroll', onScroll)
       $('.show-on-fixed').hide()
     })
+
     function onScroll() {
-      
-      if(navOffsetTop < $(window).scrollTop() && !$('nav').hasClass('fixed')) {
+
+      if (navOffsetTop < $(window).scrollTop() && !$('nav').hasClass('fixed')) {
         $('nav').addClass('fixed')
         $('.show-on-fixed').show()
         $('body').css("padding-top", $('nav').height())
 
       }
-      if(navOffsetTop > $(window).scrollTop() && $('nav').hasClass('fixed')) {
+      if (navOffsetTop > $(window).scrollTop() && $('nav').hasClass('fixed')) {
         $('nav').removeClass('fixed')
         $('.show-on-fixed').hide()
         $('body').css("padding-top", 0)
@@ -361,4 +373,5 @@
     }
   </script>
 </body>
+
 </html>
